@@ -5,6 +5,7 @@ from application.models import (
     ServiceTicket,
     Customer,
     Mechanic,
+    Inventory,
 )
 
 from . import service_ticket_bp
@@ -149,4 +150,28 @@ def edit_ticket_mechanics(ticket_id):
 
     return jsonify(
         {"message": "Service ticket mechanics updated successfully."}
+    ), 200
+    
+@service_ticket_bp.route(
+    "/<int:ticket_id>/add-part/<int:part_id>",
+    methods=["PUT"],)
+def add_part_to_ticket(ticket_id, part_id):
+
+    ticket = db.session.get(ServiceTicket, ticket_id)
+
+    part = db.session.get(Inventory, part_id)
+
+    if not ticket:
+        return jsonify({"error": "Service ticket not found."}), 404
+
+    if not part:
+        return jsonify({"error": "Inventory item not found."}), 404
+
+    if part not in ticket.parts:
+        ticket.parts.append(part)
+
+    db.session.commit()
+
+    return jsonify(
+        {"message": "Inventory item added to service ticket successfully."}
     ), 200
