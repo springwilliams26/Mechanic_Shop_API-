@@ -17,7 +17,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"name\": \"John Smith\",\r\n  \"email\": \"js@example.com\",\r\n  \"phone\": \"555-123-4567\",\r\n  \"address\": \"123 Main Street\"\r\n}",
+              "raw": "{\r\n  \"name\": \"Spring\",\r\n  \"email\": \"spring@example.com\",\r\n  \"phone\": \"555-123-4567\",\r\n  \"address\": \"123 Main Street\",\r\n  \"password\": \"password123\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -227,6 +227,41 @@
           "response": []
         },
         {
+          "name": "Top Mechanics",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "[\r\n  {\r\n    \"id\": 1,\r\n    \"name\": \"John Smith\",\r\n    \"tickets_completed\": 1\r\n  }\r\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5000/mechanics/top-mechanics",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "mechanics",
+                "top-mechanics"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
           "name": "Update by ID",
           "request": {
             "method": "PUT",
@@ -293,7 +328,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"description\": \"Transmission\",\r\n  \"vin\": \"1TST82633T123456\",\r\n  \"service_date\": \"2026-06-06\",\r\n  \"customer_id\": 2\r\n  \r\n}",
+              "raw": "{\r\n  \"description\": \"Brakes\",\r\n  \"vin\": \"1TST82633T123456\",\r\n  \"service_date\": \"2026-06-06\",\r\n  \"customer_id\": 1\r\n\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -363,58 +398,237 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "Assign a Mechanic to Ticket",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5000/service-tickets/1/assign-mechanic/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "service-tickets",
+                "1",
+                "assign-mechanic",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Remove Mechanic from Ticket",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5000/service-tickets/1/remove-mechanic/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "service-tickets",
+                "1",
+                "remove-mechanic",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Edit Ticket Mechanics",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "Add Part to Ticket",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5000/service-tickets/1/add-part/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "service-tickets",
+                "1",
+                "add-part",
+                "1"
+              ]
+            }
+          },
+          "response": []
         }
       ]
     },
     {
-      "name": "Assign a Mechanic to Ticket",
-      "request": {
-        "method": "PUT",
-        "header": [],
-        "url": {
-          "raw": "http://127.0.0.1:5000/service-tickets/1/assign-mechanic/1",
-          "protocol": "http",
-          "host": [
-            "127",
-            "0",
-            "0",
-            "1"
-          ],
-          "port": "5000",
-          "path": [
-            "service-tickets",
-            "1",
-            "assign-mechanic",
-            "1"
-          ]
+      "name": "Inventory",
+      "item": [
+        {
+          "name": "Create Inventory",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Brake Pads\",\r\n  \"price\": 89.99\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5000/inventory/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "inventory",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "All",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5000/inventory/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "inventory",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "By ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5000/inventory/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "inventory",
+                "1"
+              ]
+            }
+          },
+          "response": []
         }
-      },
-      "response": []
+      ]
     },
     {
-      "name": "Remove Mechanic from Ticket",
-      "request": {
-        "method": "PUT",
-        "header": [],
-        "url": {
-          "raw": "http://127.0.0.1:5000/service-tickets/1/remove-mechanic/1",
-          "protocol": "http",
-          "host": [
-            "127",
-            "0",
-            "0",
-            "1"
-          ],
-          "port": "5000",
-          "path": [
-            "service-tickets",
-            "1",
-            "remove-mechanic",
-            "1"
-          ]
+      "name": "Login",
+      "item": [
+        {
+          "name": "Create new login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"spring@example.com\",\r\n  \"password\": \"password123\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5000/customers/login",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "customers",
+                "login"
+              ]
+            }
+          },
+          "response": []
         }
-      },
-      "response": []
+      ]
+    },
+    {
+      "name": "Protected Route",
+      "item": [
+        {
+          "name": "Customer Tickets",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Pagination",
+      "item": [
+        {
+          "name": "Customers per page",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
     }
   ]
 }
