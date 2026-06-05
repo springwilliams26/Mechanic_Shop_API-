@@ -78,3 +78,26 @@ def delete_mechanic(mechanic_id):
     return jsonify(
         {"message": f"Mechanic {mechanic_id} deleted successfully."}
     ), 200
+    
+    
+@mechanic_bp.route("/top-mechanics", methods=["GET"])
+def top_mechanics():
+
+    mechanics = Mechanic.query.all()
+
+    sorted_mechanics = sorted(
+        mechanics,
+        key=lambda mechanic: len(mechanic.service_tickets),
+        reverse=True,
+    )
+
+    return jsonify(
+        [
+            {
+                "id": mechanic.id,
+                "name": mechanic.name,
+                "tickets_completed": len(mechanic.service_tickets),
+            }
+            for mechanic in sorted_mechanics
+        ]
+    ), 200

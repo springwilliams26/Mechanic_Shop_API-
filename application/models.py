@@ -31,6 +31,8 @@ class Customer(db.Model):
 
     address = db.Column(db.String(200))
 
+    password = db.Column(db.String(255), nullable=False)
+
     service_tickets = db.relationship(
         "ServiceTicket",
         back_populates="customer",

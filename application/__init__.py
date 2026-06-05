@@ -1,6 +1,6 @@
-from flask import Flask
+from flask import Flask, app
 from config import Config
-from application.extensions import db, ma
+from application.extensions import db, ma, limiter, cache
 
 def create_app():
     app = Flask(__name__)
@@ -8,6 +8,8 @@ def create_app():
 
     db.init_app(app)
     ma.init_app(app)
+    limiter.init_app(app)
+    cache.init_app(app)
 
     from application.blueprints.customer import customer_bp
     from application.blueprints.mechanic import mechanic_bp
