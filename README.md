@@ -2,7 +2,9 @@
 
 ## Project Description
 
-The Mechanic Shop API is a RESTful backend application built with Flask, SQLAlchemy, and Marshmallow. The application allows users to manage customers, mechanics, service tickets, and inventory while demonstrating CRUD operations, database relationships, authentication, caching, rate limiting, advanced queries, and the Application Factory Pattern.
+The Mechanic Shop API is a RESTful backend application built using Flask, SQLAlchemy, Marshmallow, and SQLite.
+
+The API allows users to manage customers, mechanics, service tickets, and inventory items. This phase of the project focused on improving the application through API documentation and automated testing.
 
 ## Technologies Used
 
@@ -10,11 +12,12 @@ The Mechanic Shop API is a RESTful backend application built with Flask, SQLAlch
 - Flask
 - Flask-SQLAlchemy
 - Flask-Marshmallow
-- Marshmallow
 - SQLite
 - Flask-Limiter
 - Flask-Caching
-- Python-JOSE (JWT Authentication)
+- Flask-Swagger-UI
+- Python-JOSE
+- Unittest
 - Postman
 - GitHub
 
@@ -22,19 +25,28 @@ The Mechanic Shop API is a RESTful backend application built with Flask, SQLAlch
 
 - Customer CRUD operations
 - Mechanic CRUD operations
-- Inventory CRUD operations
 - Service Ticket management
+- Inventory management
 - Assign mechanics to service tickets
 - Remove mechanics from service tickets
-- Add inventory parts to service tickets
-- Customer login with token authentication
-- Protected customer ticket endpoint
-- Customer pagination
-- Mechanic ranking by completed service tickets
+- Add inventory items to service tickets
+- Customer login with JWT authentication
+- Protected routes
 - Rate limiting
-- Caching
-- One-to-Many and Many-to-Many database relationships
-- Application Factory Pattern architecture
+- Response caching
+- Customer pagination
+- Swagger API documentation
+- Automated unit testing
+
+## Documentation
+
+Swagger UI was implemented to document all API endpoints, request parameters, response examples, and authentication requirements.
+
+Access Swagger Documentation:
+
+```bash
+http://127.0.0.1:5000/api/docs
+```
 
 ## How to Run
 
@@ -76,9 +88,18 @@ python app.py
 
 # Testing
 
-All API endpoints were tested using Postman.
+Unit tests were created for:
 
-A Postman collection is included in the project for endpoint testing and validation.
+Customers
+Mechanics
+Service Tickets
+Inventory
+
+Run all tests with:
+
+```bash
+python -m unittest discover tests
+```
 
 # Author
 
