@@ -27,17 +27,9 @@
             "url": {
               "raw": "http://127.0.0.1:5000/customers/",
               "protocol": "http",
-              "host": [
-                "127",
-                "0",
-                "0",
-                "1"
-              ],
+              "host": ["127", "0", "0", "1"],
               "port": "5000",
-              "path": [
-                "customers",
-                ""
-              ]
+              "path": ["customers", ""]
             }
           },
           "response": []
@@ -50,17 +42,9 @@
             "url": {
               "raw": "http://127.0.0.1:5000/customers/2",
               "protocol": "http",
-              "host": [
-                "127",
-                "0",
-                "0",
-                "1"
-              ],
+              "host": ["127", "0", "0", "1"],
               "port": "5000",
-              "path": [
-                "customers",
-                "2"
-              ]
+              "path": ["customers", "2"]
             }
           },
           "response": []
@@ -73,17 +57,9 @@
             "url": {
               "raw": "http://127.0.0.1:5000/customers/",
               "protocol": "http",
-              "host": [
-                "127",
-                "0",
-                "0",
-                "1"
-              ],
+              "host": ["127", "0", "0", "1"],
               "port": "5000",
-              "path": [
-                "customers",
-                ""
-              ]
+              "path": ["customers", ""]
             }
           },
           "response": []
@@ -95,7 +71,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"name\": \"Spring Williams\",\r\n  \"email\": \"spring@example.com\",\r\n  \"phone\": \"555-999-8888\",\r\n  \"address\": \"456 New Address\"\r\n}",
+              "raw": "{\r\n  \"name\": \"Janet Updated\",\r\n  \"email\": \"J@example.com\",\r\n  \"phone\": \"555-999-8888\",\r\n  \"address\": \"456 New Address\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -103,19 +79,11 @@
               }
             },
             "url": {
-              "raw": "http://127.0.0.1:5000/customers/1",
+              "raw": "http://127.0.0.1:5000/customers/5",
               "protocol": "http",
-              "host": [
-                "127",
-                "0",
-                "0",
-                "1"
-              ],
+              "host": ["127", "0", "0", "1"],
               "port": "5000",
-              "path": [
-                "customers",
-                "1"
-              ]
+              "path": ["customers", "5"]
             }
           },
           "response": []
@@ -126,19 +94,11 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "http://127.0.0.1:5000/customers/1",
+              "raw": "http://127.0.0.1:5000/customers/5",
               "protocol": "http",
-              "host": [
-                "127",
-                "0",
-                "0",
-                "1"
-              ],
+              "host": ["127", "0", "0", "1"],
               "port": "5000",
-              "path": [
-                "customers",
-                "1"
-              ]
+              "path": ["customers", "5"]
             }
           },
           "response": []
@@ -155,7 +115,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"name\": \"Jane Smith\",\r\n  \"email\": \"Jane@shop.com\",\r\n  \"phone\": \"555-111-2222\",\r\n  \"salary\": 65000\r\n}",
+              "raw": "{\r\n  \"name\": \"John SMith\",\r\n  \"email\": \"js@shop.com\",\r\n  \"phone\": \"555-111-2222\",\r\n  \"salary\": 65000\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -165,17 +125,9 @@
             "url": {
               "raw": "http://127.0.0.1:5000/mechanics/",
               "protocol": "http",
-              "host": [
-                "127",
-                "0",
-                "0",
-                "1"
-              ],
+              "host": ["127", "0", "0", "1"],
               "port": "5000",
-              "path": [
-                "mechanics",
-                ""
-              ]
+              "path": ["mechanics", ""]
             }
           },
           "response": []
@@ -186,19 +138,11 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://127.0.0.1:5000/mechanics/1",
+              "raw": "http://127.0.0.1:5000/mechanics/3",
               "protocol": "http",
-              "host": [
-                "127",
-                "0",
-                "0",
-                "1"
-              ],
+              "host": ["127", "0", "0", "1"],
               "port": "5000",
-              "path": [
-                "mechanics",
-                "1"
-              ]
+              "path": ["mechanics", "3"]
             }
           },
           "response": []
@@ -211,17 +155,9 @@
             "url": {
               "raw": "http://127.0.0.1:5000/mechanics/",
               "protocol": "http",
-              "host": [
-                "127",
-                "0",
-                "0",
-                "1"
-              ],
+              "host": ["127", "0", "0", "1"],
               "port": "5000",
-              "path": [
-                "mechanics",
-                ""
-              ]
+              "path": ["mechanics", ""]
             }
           },
           "response": []
@@ -246,17 +182,9 @@
             "url": {
               "raw": "http://127.0.0.1:5000/mechanics/top-mechanics",
               "protocol": "http",
-              "host": [
-                "127",
-                "0",
-                "0",
-                "1"
-              ],
+              "host": ["127", "0", "0", "1"],
               "port": "5000",
-              "path": [
-                "mechanics",
-                "top-mechanics"
-              ]
+              "path": ["mechanics", "top-mechanics"]
             }
           },
           "response": []
@@ -268,7 +196,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"name\": \"John Smith Updated\",\r\n  \"email\": \"john@shop.com\",\r\n  \"phone\": \"555-111-2222\",\r\n  \"salary\": 65000\r\n}",
+              "raw": "{\r\n  \"name\": \"William Updated\",\r\n  \"email\": \"W@shop.com\",\r\n  \"phone\": \"555-111-2222\",\r\n  \"salary\": 65000\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -276,19 +204,11 @@
               }
             },
             "url": {
-              "raw": "http://127.0.0.1:5000/mechanics/1",
+              "raw": "http://127.0.0.1:5000/mechanics/3",
               "protocol": "http",
-              "host": [
-                "127",
-                "0",
-                "0",
-                "1"
-              ],
+              "host": ["127", "0", "0", "1"],
               "port": "5000",
-              "path": [
-                "mechanics",
-                "1"
-              ]
+              "path": ["mechanics", "3"]
             }
           },
           "response": []
@@ -299,19 +219,11 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "http://127.0.0.1:5000/mechanics/1",
+              "raw": "http://127.0.0.1:5000/mechanics/2",
               "protocol": "http",
-              "host": [
-                "127",
-                "0",
-                "0",
-                "1"
-              ],
+              "host": ["127", "0", "0", "1"],
               "port": "5000",
-              "path": [
-                "mechanics",
-                "1"
-              ]
+              "path": ["mechanics", "2"]
             }
           },
           "response": []
@@ -338,17 +250,9 @@
             "url": {
               "raw": "http://127.0.0.1:5000/service-tickets/",
               "protocol": "http",
-              "host": [
-                "127",
-                "0",
-                "0",
-                "1"
-              ],
+              "host": ["127", "0", "0", "1"],
               "port": "5000",
-              "path": [
-                "service-tickets",
-                ""
-              ]
+              "path": ["service-tickets", ""]
             }
           },
           "response": []
@@ -361,17 +265,9 @@
             "url": {
               "raw": "http://127.0.0.1:5000/service-tickets/",
               "protocol": "http",
-              "host": [
-                "127",
-                "0",
-                "0",
-                "1"
-              ],
+              "host": ["127", "0", "0", "1"],
               "port": "5000",
-              "path": [
-                "service-tickets",
-                ""
-              ]
+              "path": ["service-tickets", ""]
             }
           },
           "response": []
@@ -384,17 +280,9 @@
             "url": {
               "raw": "http://127.0.0.1:5000/service-tickets/",
               "protocol": "http",
-              "host": [
-                "127",
-                "0",
-                "0",
-                "1"
-              ],
+              "host": ["127", "0", "0", "1"],
               "port": "5000",
-              "path": [
-                "service-tickets",
-                ""
-              ]
+              "path": ["service-tickets", ""]
             }
           },
           "response": []
@@ -405,21 +293,11 @@
             "method": "PUT",
             "header": [],
             "url": {
-              "raw": "http://127.0.0.1:5000/service-tickets/1/assign-mechanic/1",
+              "raw": "http://127.0.0.1:5000/service-tickets/3/assign-mechanic/3",
               "protocol": "http",
-              "host": [
-                "127",
-                "0",
-                "0",
-                "1"
-              ],
+              "host": ["127", "0", "0", "1"],
               "port": "5000",
-              "path": [
-                "service-tickets",
-                "1",
-                "assign-mechanic",
-                "1"
-              ]
+              "path": ["service-tickets", "3", "assign-mechanic", "3"]
             }
           },
           "response": []
@@ -432,19 +310,9 @@
             "url": {
               "raw": "http://127.0.0.1:5000/service-tickets/1/remove-mechanic/1",
               "protocol": "http",
-              "host": [
-                "127",
-                "0",
-                "0",
-                "1"
-              ],
+              "host": ["127", "0", "0", "1"],
               "port": "5000",
-              "path": [
-                "service-tickets",
-                "1",
-                "remove-mechanic",
-                "1"
-              ]
+              "path": ["service-tickets", "1", "remove-mechanic", "1"]
             }
           },
           "response": []
@@ -452,8 +320,24 @@
         {
           "name": "Edit Ticket Mechanics",
           "request": {
-            "method": "GET",
-            "header": []
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"add_ids\": [1],\r\n  \"remove_ids\": []\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5000/service-tickets/1/edit",
+              "protocol": "http",
+              "host": ["127", "0", "0", "1"],
+              "port": "5000",
+              "path": ["service-tickets", "1", "edit"]
+            }
           },
           "response": []
         },
@@ -465,19 +349,9 @@
             "url": {
               "raw": "http://127.0.0.1:5000/service-tickets/1/add-part/1",
               "protocol": "http",
-              "host": [
-                "127",
-                "0",
-                "0",
-                "1"
-              ],
+              "host": ["127", "0", "0", "1"],
               "port": "5000",
-              "path": [
-                "service-tickets",
-                "1",
-                "add-part",
-                "1"
-              ]
+              "path": ["service-tickets", "1", "add-part", "1"]
             }
           },
           "response": []
@@ -504,17 +378,9 @@
             "url": {
               "raw": "http://127.0.0.1:5000/inventory/",
               "protocol": "http",
-              "host": [
-                "127",
-                "0",
-                "0",
-                "1"
-              ],
+              "host": ["127", "0", "0", "1"],
               "port": "5000",
-              "path": [
-                "inventory",
-                ""
-              ]
+              "path": ["inventory", ""]
             }
           },
           "response": []
@@ -527,17 +393,9 @@
             "url": {
               "raw": "http://127.0.0.1:5000/inventory/",
               "protocol": "http",
-              "host": [
-                "127",
-                "0",
-                "0",
-                "1"
-              ],
+              "host": ["127", "0", "0", "1"],
               "port": "5000",
-              "path": [
-                "inventory",
-                ""
-              ]
+              "path": ["inventory", ""]
             }
           },
           "response": []
@@ -550,17 +408,9 @@
             "url": {
               "raw": "http://127.0.0.1:5000/inventory/1",
               "protocol": "http",
-              "host": [
-                "127",
-                "0",
-                "0",
-                "1"
-              ],
+              "host": ["127", "0", "0", "1"],
               "port": "5000",
-              "path": [
-                "inventory",
-                "1"
-              ]
+              "path": ["inventory", "1"]
             }
           },
           "response": []
@@ -587,17 +437,9 @@
             "url": {
               "raw": "http://127.0.0.1:5000/customers/login",
               "protocol": "http",
-              "host": [
-                "127",
-                "0",
-                "0",
-                "1"
-              ],
+              "host": ["127", "0", "0", "1"],
               "port": "5000",
-              "path": [
-                "customers",
-                "login"
-              ]
+              "path": ["customers", "login"]
             }
           },
           "response": []
@@ -609,9 +451,35 @@
       "item": [
         {
           "name": "Customer Tickets",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "GET",
-            "header": []
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3ODA2ODQ2NzQsImlhdCI6MTc4MDY4MTA3NCwic3ViIjoiMSJ9.C9SMkVxRalHvpz8D4NU4opExqMUhl6lRYPntRD44Qco",
+                "type": "text"
+              },
+              {
+                "key": "",
+                "value": "",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"spring@example.com\",\r\n  \"password\": \"password123\"\r\n}"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5000/customers/my-tickets",
+              "protocol": "http",
+              "host": ["127", "0", "0", "1"],
+              "port": "5000",
+              "path": ["customers", "my-tickets"]
+            }
           },
           "response": []
         }
@@ -624,7 +492,24 @@
           "name": "Customers per page",
           "request": {
             "method": "GET",
-            "header": []
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5000/customers/?page=1&per_page=5",
+              "protocol": "http",
+              "host": ["127", "0", "0", "1"],
+              "port": "5000",
+              "path": ["customers", ""],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "per_page",
+                  "value": "5"
+                }
+              ]
+            }
           },
           "response": []
         }
