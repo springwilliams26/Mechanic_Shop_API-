@@ -2,7 +2,7 @@
 
 ## Project Description
 
-The Mechanic Shop API is a RESTful backend application built with Flask, SQLAlchemy, and Marshmallow. The application allows users to manage customers, mechanics, and service tickets while demonstrating CRUD operations, database relationships, and the Application Factory Pattern.
+The Mechanic Shop API is a RESTful backend application built with Flask, SQLAlchemy, and Marshmallow. The application allows users to manage customers, mechanics, service tickets, and inventory while demonstrating CRUD operations, database relationships, authentication, caching, rate limiting, advanced queries, and the Application Factory Pattern.
 
 ## Technologies Used
 
@@ -12,6 +12,9 @@ The Mechanic Shop API is a RESTful backend application built with Flask, SQLAlch
 - Flask-Marshmallow
 - Marshmallow
 - SQLite
+- Flask-Limiter
+- Flask-Caching
+- Python-JOSE (JWT Authentication)
 - Postman
 - GitHub
 
@@ -19,9 +22,17 @@ The Mechanic Shop API is a RESTful backend application built with Flask, SQLAlch
 
 - Customer CRUD operations
 - Mechanic CRUD operations
+- Inventory CRUD operations
 - Service Ticket management
 - Assign mechanics to service tickets
 - Remove mechanics from service tickets
+- Add inventory parts to service tickets
+- Customer login with token authentication
+- Protected customer ticket endpoint
+- Customer pagination
+- Mechanic ranking by completed service tickets
+- Rate limiting
+- Caching
 - One-to-Many and Many-to-Many database relationships
 - Application Factory Pattern architecture
 
@@ -66,6 +77,8 @@ python app.py
 # Testing
 
 All API endpoints were tested using Postman.
+
+A Postman collection is included in the project for endpoint testing and validation.
 
 # Author
 
