@@ -1,4 +1,4 @@
-from flask import Flask, app
+from flask import Flask
 from flask_swagger_ui import get_swaggerui_blueprint
 from config import Config
 from application.extensions import db, ma, limiter, cache
@@ -14,9 +14,9 @@ swaggerui_blueprint = get_swaggerui_blueprint(
     },
 )
 
-def create_app():
+def create_app(config_class=Config):
     app = Flask(__name__)
-    app.config.from_object(Config)
+    app.config.from_object(config_class)
     app.register_blueprint(swaggerui_blueprint, url_prefix=SWAGGER_URL)
 
     db.init_app(app)
