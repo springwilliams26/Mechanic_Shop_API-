@@ -6,7 +6,6 @@ class ServiceTicketSchema(ma.SQLAlchemyAutoSchema):
     class Meta:
         model = ServiceTicket
         include_fk = True
-        include_relationships = True
         load_instance = False
 
 
