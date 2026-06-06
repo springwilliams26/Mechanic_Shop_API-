@@ -2,9 +2,9 @@
 
 ## Project Description
 
-The Mechanic Shop API is a RESTful backend application built using Flask, SQLAlchemy, Marshmallow, and SQLite.
+he Mechanic Shop API is a RESTful backend application built using Flask, SQLAlchemy, Marshmallow, and SQLite.
 
-The API allows users to manage customers, mechanics, service tickets, and inventory items. This phase of the project focused on improving the application through API documentation and automated testing.
+The API allows users to manage customers, mechanics, service tickets, and inventory items. This phase of the project focused on deploying the application to a cloud platform and implementing a CI/CD pipeline for automated testing and deployment.
 
 ## Technologies Used
 
@@ -13,11 +13,15 @@ The API allows users to manage customers, mechanics, service tickets, and invent
 - Flask-SQLAlchemy
 - Flask-Marshmallow
 - SQLite
+- PostgreSQL
 - Flask-Limiter
 - Flask-Caching
 - Flask-Swagger-UI
 - Python-JOSE
 - Unittest
+- Gunicorn
+- GitHub Actions
+- Render
 - Postman
 - GitHub
 
@@ -37,6 +41,10 @@ The API allows users to manage customers, mechanics, service tickets, and invent
 - Customer pagination
 - Swagger API documentation
 - Automated unit testing
+- PostgreSQL production database
+- Render cloud deployment
+- GitHub Actions CI/CD pipeline
+- Automated deployment workflow
 
 ## Documentation
 
@@ -90,16 +98,22 @@ python app.py
 
 Unit tests were created for:
 
-Customers
-Mechanics
-Service Tickets
-Inventory
+- Customers
+- Mechanics
+- Service Tickets
+- Inventory
 
 Run all tests with:
 
 ```bash
 python -m unittest discover tests
 ```
+
+# Deployment
+
+The API is deployed using Render with a PostgreSQL production database.
+
+The project also includes a GitHub Actions workflow that automatically runs tests and deploys updates when changes are pushed to the main branch.
 
 # Author
 
